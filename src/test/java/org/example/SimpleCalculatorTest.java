@@ -11,4 +11,11 @@ class SimpleCalculatorTest {
         assertEquals(4, calculator.add(2,2));
     }
 
+    @Test
+    void twoPlusZeroShouldEqualTwo() {
+        SimpleCalculator calculator = new SimpleCalculator();
+        assertTrue(calculator.add(0,2) == 2);
+        assertTrue(calculator.add(0,2) == calculator.add(2,0));
+    }
 }
+
